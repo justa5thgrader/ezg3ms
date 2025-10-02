@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Site</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="tab-nav">
+        <button class="tab-link active" onclick="openTab(event, 'allGames')">All Games</button>
+        <button class="tab-link" onclick="openTab(event, 'motoX3M')">Moto X3M</button>
+        <button class="tab-link" onclick="openTab(event, 'action')">Action Games</button>
+        <button class="tab-link" onclick="openTab(event, 'puzzle')">Puzzle Games</button>
+    </nav>
+    <div class="tab-container">
+        <div id="allGames" class="tab-content active">
+            <div class="game-container">
+        <!-- Game Cards -->
+        <div class="game-card" data-url="https://myapps.classlink.courter.com/assets/mainstorage/cookieclicker.html" data-title="Cookie Clicker" data-image="https://myapps.classlink.courter.com/images/games/cookieclicker-min.png">
+            <div class="game-thumb" aria-hidden="true" style="background: center/cover no-repeat url('https://myapps.classlink.courter.com/images/games/cookieclicker-min.png'); border-radius:16px; overflow:hidden;"></div>
+            <div class="game-caption">Cookie Clicker</div>
+        </div>
+        <div class="game-card" data-url="https://myapps.classlink.courter.com/assets/mainstorage/crazybikes.html" data-title="Crazy Bikes" data-image="https://myapps.classlink.courter.com/images/games/crazybikes-min.png">
+            <div class="game-thumb" aria-hidden="true" style="background: center/cover no-repeat url('https://myapps.classlink.courter.com/images/games/crazybikes-min.png'); border-radius:16px; overflow:hidden;"></div>
+            <div class="game-caption">Crazy Bikes</div>
+        </div>
+        <!-- Additional Game Cards -->
+        <div class="game-card" data-url="https://myapps.classlink.courter.com/assets/mainstorage/cuttherope.html" data-title="Cut the Rope" data-image="https://myapps.classlink.courter.com/images/games/cuttherope-min.png">
+            <div class="game-thumb" aria-hidden="true" style="background: center/cover no-repeat url('https://myapps.classlink.courter.com/images/games/cuttherope-min.png'); border-radius:16px; overflow:hidden;"></div>
+            <div class="game-caption">Cut the Rope</div>
+        </div>
+        <div class="game-card" data-url="https://myapps.classlink.courter.com/assets/mainstorage/policechase.html" data-title="Police Chase" data-image="https://myapps.classlink.courter.com/images/games/policechase-min.png">
+            <div class="game-thumb" aria-hidden="true" style="background: center/cover no-repeat url('https://myapps.classlink.courter.com/images/games/policechase-min.png'); border-radius:16px; overflow:hidden;"></div>
+            <div class="game-caption">Police Chase</div>
+        </div>
+        <div class="game-card" data-url="https://myapps.classlink.courter.com/assets/mainstorage/rocketsoccerderby.html" data-title="Rocket League" data-image="https://myapps.classlink.courter.com/images/games/rocketsocderby.png">
+            <div class="game-thumb" aria-hidden="true" style="background: center/cover no-repeat url('https://myapps.classlink.courter.com/images/games/rocketsocderby.png'); border-radius:16px; overflow:hidden;"></div>
+            <div class="game-caption">Rocket League</div>
+        </div>
+        <div class="game-card" data-url="https://myapps.classlink.courter.com//assets/mainstorage/racesurvival.html" data-title="Race Survival" data-image="https://myapps.classlink.courter.com//images/games/racesurvival.jpg">
+            <div class="game-thumb" aria-hidden="true" style="background: center/cover no-repeat url('https://myapps.classlink.courter.com//images/games/racesurvival.jpg'); border-radius:16px; overflow:hidden;"></div>
+            <div class="game-caption">Race Survival</div>
+        </div>
+        <div class="game-card" data-url="https://myapps.classlink.courter.com//assets/mainstorage/ragdollarchers.html" data-title="Ragdoll Archers" data-image="https://myapps.classlink.courter.com//images/games/ragdollarchers-min.png">
+            <div class="game-thumb" aria-hidden="true" style="background: center/cover no-repeat url('https://myapps.classlink.courter.com//images/games/ragdollarchers-min.png'); border-radius:16px; overflow:hidden;"></div>
+            <div class="game-caption">Ragdoll Archers</div>
+        </div>
+        <div class="game-card" data-url="https://myapps.classlink.courter.com//assets/mainstorage/stickmanhook.html" data-title="Stickman Hook" data-image="https://myapps.classlink.courter.com//images/games/stickmanhook.jpg">
+            <div class="game-thumb" aria-hidden="true" style="background: center/cover no-repeat url('https://myapps.classlink.courter.com//images/games/stickmanhook.jpg'); border-radius:16px; overflow:hidden;"></div>
+            <div class="game-caption">Stickman Hook</div>
+        </div>
+        <div class="game-card" data-url="https://storage.classroomsarecool.mex.com/slope/index.html" data-title="Slope.io" data-image="https://storage.classroomsarecool.mex.com/images/slope.png">
+            <div class="game-thumb" aria-hidden="true" style="background: center/cover no-repeat url('https://storage.classroomsarecool.mex.com/images/slope.png'); border-radius:16px; overflow:hidden;"></div>
+            <div class="game-caption">Slope.io</div>
+        </div>
+        <div class="game-card" data-url="https://storage.classroomsarecool.mex.com/geometrydash/index.html" data-title="Geometry Dash Lite" data-image="https://storage.classroomsarecool.mex.com/images/geometrydashlite.png">
+            <div class="game-thumb" aria-hidden="true" style="background: center/cover no-repeat url('https://storage.classroomsarecool.mex.com/images/geometrydashlite.png'); border-radius:16px; overflow:hidden;"></div>
+            <div class="game-caption">Geometry Dash Lite</div>
+        </div>
+        <div class="game-card" data-url="https://storage.classroomsarecool.mex.com/gunspin/index.html" data-title="Gunspin" data-image="https://storage.classroomsarecool.mex.com/images/gunspin.png">
+            <div class="game-thumb" aria-hidden="true" style="background: center/cover no-repeat url('https://storage.classroomsarecool.mex.com/images/gunspin.png'); border-radius:16px; overflow:hidden;"></div>
+            <div class="game-caption">Gunspin</div>
+        </div>
+        <div class="game-card" data-url="https://storage.classroomsarecool.mex.com/tombofthemask/index.html" data-title="Tomb of the Mask" data-image="https://storage.classroomsarecool.mex.com/images/tombofthemask.png">
+            <div class="game-thumb" aria-hidden="true" style="background: center/cover no-repeat url('https://storage.classroomsarecool.mex.com/images/tombofthemask.png'); border-radius:16px; overflow:hidden;"></div>
+            <div class="game-caption">Tomb of the Mask</div>
+        </div>
+        <div class="game-card" data-url="https://storage.classroomsarecool.mex.com/sm64/index.html" data-title="Super Mario 64" data-image="https://storage.classroomsarecool.mex.com/images/supermario64.png">
+            <div class="game-thumb" aria-hidden="true" style="background: center/cover no-repeat url('https://storage.classroomsarecool.mex.com/images/supermario64.png'); border-radius:16px; overflow:hidden;"></div>
+            <div class="game-caption">Super Mario 64</div>
+        </div>
+        <div class="game-card" data-url="https://storage.classroomsarecool.mex.com/eggy-car/index.html" data-title="Eggy Car" data-image="https://storage.classroomsarecool.mex.com/images/eggycar.png">
+            <div class="game-thumb" aria-hidden="true" style="background: center/cover no-repeat url('https://storage.classroomsarecool.mex.com/images/eggycar.png'); border-radius:16px; overflow:hidden;"></div>
+            <div class="game-caption">Eggy Car</div>
+        </div>
+        <div class="game-card" data-url="https://storage.classroomsarecool.mex.com/snowrider3d/index.html" data-title="Snow Rider 3D" data-image="https://storage.classroomsarecool.mex.com/images/snowrider3d.png">
+            <div class="game-thumb" aria-hidden="true" style="background: center/cover no-repeat url('https://storage.classroomsarecool.mex.com/images/snowrider3d.png'); border-radius:16px; overflow:hidden;"></div>
+            <div class="game-caption">Snow Rider 3D</div>
+        </div>
+        <div class="game-card" data-url="https://storage.classroomsarecool.mex.com/crossyroad/index.html" data-title="Crossy Road" data-image="https://storage.classroomsarecool.mex.com/images/crossyroad.png">
+            <div class="game-thumb" aria-hidden="true" style="background: center/cover no-repeat url('https://storage.classroomsarecool.mex.com/images/crossyroad.png'); border-radius:16px; overflow:hidden;"></div>
+            <div class="game-caption">Crossy Road</div>
+        </div>
+        <div class="game-card" data-url="https://storage.classroomsarecool.mex.com/pacman/index.html" data-title="Pac-Man" data-image="https://storage.classroomsarecool.mex.com/images/pacman.png">
+            <div class="game-thumb" aria-hidden="true" style="background: center/cover no-repeat url('https://storage.classroomsarecool.mex.com/images/pacman.png'); border-radius:16px; overflow:hidden;"></div>
+            <div class="game-caption">Pac-Man</div>
+        </div>
+        <div class="game-card" data-url="https://storage.classroomsarecool.mex.com/elasticface/index.html" data-title="Elastic Face" data-image="https://storage.classroomsarecool.mex.com/images/elasticface.png">
+            <div class="game-thumb" aria-hidden="true" style="background: center/cover no-repeat url('https://storage.classroomsarecool.mex.com/images/elasticface.png'); border-radius:16px; overflow:hidden;"></div>
+            <div class="game-caption">Elastic Face</div>
+        </div>
+        <div class="game-card" data-url="https://storage.classroomsarecool.mex.com/subwaysurfers-sf/index.html" data-title="Subway Surfers" data-image="https://storage.classroomsarecool.mex.com/images/subwaysurfers.png">
+            <div class="game-thumb" aria-hidden="true" style="background: center/cover no-repeat url('https://storage.classroomsarecool.mex.com/images/subwaysurfers.png'); border-radius:16px; overflow:hidden;"></div>
+            <div class="game-caption">Subway Surfers</div>
+        </div>
+        <div class="game-card" data-url="https://storage.classroomsarecool.mex.com/basketball-stars/index.html" data-title="Basketball Stars" data-image="https://storage.classroomsarecool.mex.com/images/basketballstars.png">
+            <div class="game-thumb" aria-hidden="true" style="background: center/cover no-repeat url('https://storage.classroomsarecool.mex.com/images/basketballstars.png'); border-radius:16px; overflow:hidden;"></div>
+            <div class="game-caption">Basketball Stars</div>
+        </div>
+        <div class="game-card" data-url="https://storage.classroomsarecool.mex.com/crazy-cars/index.html" data-title="Crazy Cars" data-image="https://storage.classroomsarecool.mex.com/images/crazycars.png">
+            <div class="game-thumb" aria-hidden="true" style="background: center/cover no-repeat url('https://storage.classroomsarecool.mex.com/images/crazycars.png'); border-radius:16px; overflow:hidden;"></div>
+            <div class="game-caption">Crazy Cars</div>
+        </div>
+        <div class="game-card" data-url="https://storage.classroomsarecool.mex.com/paperio2/index.html" data-title="Paper.io 2" data-image="https://storage.classroomsarecool.mex.com/images/paperio2.png">
+            <div class="game-thumb" aria-hidden="true" style="background: center/cover no-repeat url('https://storage.classroomsarecool.mex.com/images/paperio2.png'); border-radius:16px; overflow:hidden;"></div>
+            <div class="game-caption">Paper.io 2</div>
+        </div>
+        <div class="game-card" data-url="https://storage.classroomsarecool.mex.com/minecraftparkour/index.html" data-title="Minecraft Parkour" data-image="https://storage.classroomsarecool.mex.com/images/minecraftparkour.png">
+            <div class="game-thumb" aria-hidden="true" style="background: center/cover no-repeat url('https://storage.classroomsarecool.mex.com/images/minecraftparkour.png'); border-radius:16px; overflow:hidden;"></div>
+            <div class="game-caption">Minecraft Parkour</div>
+        </div>
+        <div class="game-card" data-url="https://storage.classroomsarecool.mex.com/death-run-3d/index.html" data-title="Death Run 3D" data-image="https://storage.classroomsarecool.mex.com/images/deathrun3d.png">
+            <div class="game-thumb" aria-hidden="true" style="background: center/cover no-repeat url('https://storage.classroomsarecool.mex.com/images/deathrun3d.png'); border-radius:16px; overflow:hidden;"></div>
+            <div class="game-caption">Death Run 3D</div>
+        </div>
+        <div class="game-card" data-url="https://storage.classroomsarecool.mex.com/highwayriderextreme.html" data-title="Highway Rider Extreme" data-image="https://storage.classroomsarecool.mex.com/images/highwayriderextreme.png">
+            <div class="game-thumb" aria-hidden="true" style="background: center/cover no-repeat url('https://storage.classroomsarecool.mex.com/images/highwayriderextreme.png'); border-radius:16px; overflow:hidden;"></div>
+            <div class="game-caption">Highway Rider Extreme</div>
+        </div>
+        <div class="game-card" data-url="https://storage.classroomsarecool.mex.com/stackball/index.html" data-title="Stackball" data-image="https://storage.classroomsarecool.mex.com/images/stackball.png">
+            <div class="game-thumb" aria-hidden="true" style="background: center/cover no-repeat url('https://storage.classroomsarecool.mex.com/images/stackball.png'); border-radius:16px; overflow:hidden;"></div>
+            <div class="game-caption">Stackball</div>
+        </div>
+        <div class="game-card" data-url="https://storage.classroomsarecool.mex.com/skibidi-strike/index.html" data-title="Skibidi Strike" data-image="https://storage.classroomsarecool.mex.com/images/skibidistrike.png">
+            <div class="game-thumb" aria-hidden="true" style="background: center/cover no-repeat url('https://storage.classroomsarecool.mex.com/images/skibidistrike.png'); border-radius:16px; overflow:hidden;"></div>
+            <div class="game-caption">Skibidi Strike</div>
+        </div>
+        <div class="game-card" data-url="https://storage.classroomsarecool.mex.com/scrapmetal/index.html" data-title="Scrap Metal 3" data-image="">
+            <div class="game-thumb" aria-hidden="true"></div>
+            <div class="game-caption">Scrap Metal 3</div>
+        </div>
+        <div class="game-card" data-url="https://storage.classroomsarecool.mex.com/slow-roads/index.html" data-title="Slow Roads" data-image="https://storage.classroomsarecool.mex.com/images/slowroads.png">
+            <div class="game-thumb" aria-hidden="true" style="background: center/cover no-repeat url('https://storage.classroomsarecool.mex.com/images/slowroads.png'); border-radius:16px; overflow:hidden;"></div>
+            <div class="game-caption">Slow Roads</div>
+        </div>
+        <div class="game-card" data-url="https://storage.classroomsarecool.mex.com/jetpack-joyride/index.html" data-title="Jetpack Joyride" data-image="https://storage.classroomsarecool.mex.com/images/jetpackjoyride.png">
+            <div class="game-thumb" aria-hidden="true" style="background: center/cover no-repeat url('https://storage.classroomsarecool.mex.com/images/jetpackjoyride.png'); border-radius:16px; overflow:hidden;"></div>
+            <div class="game-caption">Jetpack Joyride</div>
+        </div>
+        <div class="game-card" data-url="https://storage.classroomsarecool.mex.com/gswitch-3/index.html" data-title="G-Switch 3" data-image="https://storage.classroomsarecool.mex.com/images/gswitch3.png">
+            <div class="game-thumb" aria-hidden="true" style="background: center/cover no-repeat url('https://storage.classroomsarecool.mex.com/images/gswitch3.png'); border-radius:16px; overflow:hidden;"></div>
+            <div class="game-caption">G-Switch 3</div>
+        </div>
+        <div class="game-card" data-url="https://storage.classroomsarecool.mex.com/googlesnake.html" data-title="Google Snake" data-image="https://storage.classroomsarecool.mex.com/images/googlesnake.png">
+            <div class="game-thumb" aria-hidden="true" style="background: center/cover no-repeat url('https://storage.classroomsarecool.mex.com/images/googlesnake.png'); border-radius:16px; overflow:hidden;"></div>
+            <div class="game-caption">Google Snake</div>
+        </div>
+        <div class="game-card" data-url="https://storage.classroomsarecool.mex.com/fruitninja/index.html" data-title="Fruit Ninja" data-image="https://storage.classroomsarecool.mex.com/images/fruitninja.png">
+            <div class="game-thumb" aria-hidden="true" style="background: center/cover no-repeat url('https://storage.classroomsarecool.mex.com/images/fruitninja.png'); border-radius:16px; overflow:hidden;"></div>
+            <div class="game-caption">Fruit Ninja</div>
+        </div>
+        <div class="game-card" data-url="https://storage.classroomsarecool.mex.com/cuttherope-Timetravel/index.html" data-title="Cut the Rope: Time Travel" data-image="https://storage.classroomsarecool.mex.com/images/cuttherope.png">
+            <div class="game-thumb" aria-hidden="true" style="background: center/cover no-repeat url('https://storage.classroomsarecool.mex.com/images/cuttherope.png'); border-radius:16px; overflow:hidden;"></div>
+            <div class="game-caption">Cut the Rope: Time Travel</div>
+        </div>
+        <div class="game-card" data-url="https://storage.classroomsarecool.mex.com/holeio.html" data-title="Hole.io" data-image="https://storage.classroomsarecool.mex.com/images/holeio.png">
+            <div class="game-thumb" aria-hidden="true" style="background: center/cover no-repeat url('https://storage.classroomsarecool.mex.com/images/holeio.png'); border-radius:16px; overflow:hidden;"></div>
+            <div class="game-caption">Hole.io</div>
+        </div>
+        <div class="game-card" data-url="https://storage.classroomsarecool.mex.com/retro-bowl/index.html" data-title="Retro Bowl" data-image="https://storage.classroomsarecool.mex.com/images/retrobowl.png">
+            <div class="game-thumb" aria-hidden="true" style="background: center/cover no-repeat url('https://storage.classroomsarecool.mex.com/images/retrobowl.png'); border-radius:16px; overflow:hidden;"></div>
+            <div class="game-caption">Retro Bowl</div>
+        </div>
+        <div class="game-card" data-url="https://myapps.classlink.courter.com//assets/mainstorage/mrracer.html" data-title="Mr Racer" data-image="https://myapps.classlink.courter.com//images/games/mrracer.jpg">
+            <div class="game-thumb" aria-hidden="true" style="background: center/cover no-repeat url('https://myapps.classlink.courter.com//images/games/mrracer.jpg'); border-radius:16px; overflow:hidden;"></div>
+            <div class="game-caption">Mr Racer</div>
+        </div>
+        <div class="game-card" data-url="https://myapps.classlink.courter.com//assets/mainstorage/redvsbluez.html" data-title="Red VS Bluez" data-image="https://myapps.classlink.courter.com//images/games/redvsblue-min.png">
+            <div class="game-thumb" aria-hidden="true" style="background: center/cover no-repeat url('https://myapps.classlink.courter.com//images/games/redvsblue-min.png'); border-radius:16px; overflow:hidden;"></div>
+            <div class="game-caption">Red VS Bluez</div>
+        </div>
+        <div class="game-card" data-url="https://myapps.classlink.courter.com//assets/mainstorage/skyriders.html" data-title="Sky Riders" data-image="https://myapps.classlink.courter.com//images/games/skyriders-min.png">
+            <div class="game-thumb" aria-hidden="true" style="background: center/cover no-repeat url('https://myapps.classlink.courter.com//images/games/skyriders-min.png'); border-radius:16px; overflow:hidden;"></div>
+            <div class="game-caption">Sky Riders</div>
+        </div>
+        <div class="game-card" data-url="https://myapps.classlink.courter.com//assets/mainstorage/soccerrandom.html" data-title="Soccer Random" data-image="https://myapps.classlink.courter.com//images/games/soccerrandom.png">
+            <div class="game-thumb" aria-hidden="true" style="background: center/cover no-repeat url('https://myapps.classlink.courter.com//images/games/soccerrandom.png'); border-radius:16px; overflow:hidden;"></div>
+            <div class="game-caption">Soccer Random</div>
+        </div>
+        <div class="game-card" data-url="https://myapps.classlink.courter.com//assets/mainstorage/spacebarclicker.html" data-title="Spacebar Clicker" data-image="https://myapps.classlink.courter.com//images/games/spacebarclicker-min.png">
+            <div class="game-thumb" aria-hidden="true" style="background: center/cover no-repeat url('https://myapps.classlink.courter.com//images/games/spacebarclicker-min.png'); border-radius:16px; overflow:hidden;"></div>
+            <div class="game-caption">Spacebar Clicker</div>
+        </div>
+        <div class="game-card" data-url="https://myapps.classlink.courter.com//assets/mainstorage/spiralroll.html" data-title="Spiral Roll" data-image="https://myapps.classlink.courter.com//images/games/spiralroll-min.jpg">
+            <div class="game-thumb" aria-hidden="true" style="background: center/cover no-repeat url('https://myapps.classlink.courter.com//images/games/spiralroll-min.jpg'); border-radius:16px; overflow:hidden;"></div>
+            <div class="game-caption">Spiral Roll</div>
+        </div>
+        <div class="game-card" data-url="https://myapps.classlink.courter.com//assets/mainstorage/stickmanbike.html" data-title="Stickman Bike" data-image="https://myapps.classlink.courter.com//images/games/stickmanbike-min.jpg">
+            <div class="game-thumb" aria-hidden="true" style="background: center/cover no-repeat url('https://myapps.classlink.courter.com//images/games/stickmanbike-min.jpg'); border-radius:16px; overflow:hidden;"></div>
+            <div class="game-caption">Stickman Bike</div>
+        </div>
+        <div class="game-card" data-url="https://myapps.classlink.courter.com//assets/mainstorage/tanukisunset.html" data-title="Tanuki Sunset" data-image="https://myapps.classlink.courter.com//images/games/tanukisunset-min.png">
+            <div class="game-thumb" aria-hidden="true" style="background: center/cover no-repeat url('https://myapps.classlink.courter.com//images/games/tanukisunset-min.png'); border-radius:16px; overflow:hidden;"></div>
+            <div class="game-caption">Tanuki Sunset</div>
+        </div>
+        <div class="game-card" data-url="https://myapps.classlink.courter.com//assets/mainstorage/turbomotoracer.html" data-title="Turbo Moto Racer" data-image="https://myapps.classlink.courter.com//images/games/turbomotoracer-min.jpg">
+            <div class="game-thumb" aria-hidden="true" style="background: center/cover no-repeat url('https://myapps.classlink.courter.com//images/games/turbomotoracer-min.jpg'); border-radius:16px; overflow:hidden;"></div>
+            <div class="game-caption">Turbo Moto Racer</div>
+        </div>
+    </div>
+    </div>
+    </div>
+
+    <!-- Moto X3M Tab -->
+    <div id="motoX3M" class="tab-content">
+        <div class="game-container">
+            <div class="game-card" data-url="https://myapps.classlink.courter.com/assets/mainstorage/motox3mpool.html" data-title="Moto X3M Pool Party" data-image="https://myapps.classlink.courter.com/images/games/motox3mpoolparty.jpg">
+                <div class="game-thumb" aria-hidden="true" style="background: center/cover no-repeat url('https://myapps.classlink.courter.com/images/games/motox3mpoolparty.jpg'); border-radius:16px; overflow:hidden;"></div>
+                <div class="game-caption">Moto X3M Pool Party</div>
+            </div>
+            <div class="game-card" data-url="https://storage.classroomsarecool.mex.com/Moto-X3M/index.html" data-title="Moto X3M" data-image="https://storage.classroomsarecool.mex.com/images/motox3m.png">
+                <div class="game-thumb" aria-hidden="true" style="background: center/cover no-repeat url('https://storage.classroomsarecool.mex.com/images/motox3m.png'); border-radius:16px; overflow:hidden;"></div>
+                <div class="game-caption">Moto X3M</div>
+            </div>
+            <div class="game-card" data-url="https://myapps.classlink.courter.com//assets/mainstorage/motox3m3" data-title="Moto X3M 3" data-image="https://myapps.classlink.courter.com//images/games/motox3m-min.jpg">
+                <div class="game-thumb" aria-hidden="true" style="background: center/cover no-repeat url('https://myapps.classlink.courter.com//images/games/motox3m-min.jpg'); border-radius:16px; overflow:hidden;"></div>
+                <div class="game-caption">Moto X3M 3</div>
+            </div>
+            <div class="game-card" data-url="https://myapps.classlink.courter.com//assets/mainstorage/motox3mspooky.html" data-title="Moto X3M Spooky" data-image="https://myapps.classlink.courter.com//images/games/motox3mspooky.png">
+                <div class="game-thumb" aria-hidden="true" style="background: center/cover no-repeat url('https://myapps.classlink.courter.com//images/games/motox3mspooky.png'); border-radius:16px; overflow:hidden;"></div>
+                <div class="game-caption">Moto X3M Spooky</div>
+            </div>
+            <div class="game-card" data-url="https://myapps.classlink.courter.com//assets/mainstorage/motox3mwinter.html" data-title="Moto X3M Winter" data-image="https://myapps.classlink.courter.com//images/games/motox3mwinter.jpeg">
+                <div class="game-thumb" aria-hidden="true" style="background: center/cover no-repeat url('https://myapps.classlink.courter.com//images/games/motox3mwinter.jpeg'); border-radius:16px; overflow:hidden;"></div>
+                <div class="game-caption">Moto X3M Winter</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Action Games Tab -->
+    <div id="action" class="tab-content">
+        <div class="game-container">
+            <div class="game-card" data-url="https://myapps.classlink.courter.com/assets/mainstorage/vex3m.html" data-title="Vex 3M" data-image="https://myapps.classlink.courter.com/images/games/vex3m.jpg">
+                <div class="game-thumb" aria-hidden="true" style="background: center/cover no-repeat url('https://myapps.classlink.courter.com/images/games/vex3m.jpg'); border-radius:16px; overflow:hidden;"></div>
+                <div class="game-caption">Vex 3M</div>
+            </div>
+            <div class="game-card" data-url="https://storage.classroomsarecool.mex.com/clusterrush/index.html" data-title="Cluster Rush" data-image="https://storage.classroomsarecool.mex.com/images/clusterrush.png">
+                <div class="game-thumb" aria-hidden="true" style="background: center/cover no-repeat url('https://storage.classroomsarecool.mex.com/images/clusterrush.png'); border-radius:16px; overflow:hidden;"></div>
+                <div class="game-caption">Cluster Rush</div>
+            </div>
+            <div class="game-card" data-url="https://storage.classroomsarecool.mex.com/pixelshooter/index.html" data-title="Pixel Shooter" data-image="https://storage.classroomsarecool.mex.com/images/pixelshooter.png">
+                <div class="game-thumb" aria-hidden="true" style="background: center/cover no-repeat url('https://storage.classroomsarecool.mex.com/images/pixelshooter.png'); border-radius:16px; overflow:hidden;"></div>
+                <div class="game-caption">Pixel Shooter</div>
+            </div>
+            <div class="game-card" data-url="https://storage.classroomsarecool.mex.com/rooftop-snipers/index.html" data-title="Rooftop Snipers" data-image="https://storage.classroomsarecool.mex.com/images/rooftopsnipers.png">
+                <div class="game-thumb" aria-hidden="true" style="background: center/cover no-repeat url('https://storage.classroomsarecool.mex.com/images/rooftopsnipers.png'); border-radius:16px; overflow:hidden;"></div>
+                <div class="game-caption">Rooftop Snipers</div>
+            </div>
+            <div class="game-card" data-url="https://storage.classroomsarecool.mex.com/timeshooter3.html" data-title="Time Shooter 3" data-image="https://storage.classroomsarecool.mex.com/images/timeshooter3.png">
+                <div class="game-thumb" aria-hidden="true" style="background: center/cover no-repeat url('https://storage.classroomsarecool.mex.com/images/timeshooter3.png'); border-radius:16px; overflow:hidden;"></div>
+                <div class="game-caption">Time Shooter 3</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Puzzle Games Tab -->
+    <div id="puzzle" class="tab-content">
+        <div class="game-container">
+            <!-- Puzzle games will be added here -->
+        </div>
+    </div>
+</div>
+    <script src="scripts.js"></script>
+</body>
+</html>
